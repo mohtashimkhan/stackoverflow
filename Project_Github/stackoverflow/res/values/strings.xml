@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Stackoverflow</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loggedin">User Logged In</string>
+    <string name="title">PLEASE LOGIN </string>
+    <string name="txtUname">Username</string>
+     <string name="txtdname">Full Name</string>
+    <string name="txtPassword">Password</string>
+    <string name="buttonLogin">Login</string>
+	<string name="buttonSignUp">New User</string>
+	<string name="buttonShowAll">Users Profile</string>
+	<string name="newuser">User Registration </string>
+	<string name="email">Enter Email</string>
+	<string name="location">Location</string>
+	<string name="buttonRegister">Register</string>
+	<string name="buttonCancel">Cancel</string>
+	<string name="adminTitle">Admin Login</string>
+
+</resources>

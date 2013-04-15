@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    	<TextView
+  			android:id="@+id/signUpTitle"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:text="@string/newuser"
+  			android:textSize="20sp"
+  			android:gravity="center"
+  			android:textColor="#000000"
+  		/>	
+ <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/footer"
+    android:fillViewport="true" >
+<TableLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="30dp"
+  >
+  
+  <TableRow
+  	android:id="@+id/rowTitle"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	>
+  	
+  </TableRow>
+  
+  
+  	<EditText
+  	    android:id="@+id/editFullname"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:hint="Full Name"
+  	    android:layout_weight="0.5"
+  	    style="@android:style/Widget.EditText"
+  	    android:padding="10dp" >	    
+
+  	</EditText>
+  
+  	<EditText
+  	    android:id="@+id/editUsername"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="0.5"
+  	    android:hint="Username"
+  	    style="@android:style/Widget.EditText"
+  	    android:padding="10dp" >
+ 	    
+  	</EditText>
+
+  	<EditText
+  		android:id="@+id/editPassword"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+  		android:padding="10dp"
+  		android:hint="Password"
+  		android:textColor="#000000"
+  		android:password="true"
+  	></EditText>
+ 
+  <!--  Email Label -->
+
+  	<EditText
+  		android:id="@+id/editEmail"
+  		android:inputType="textEmailAddress"
+  		android:hint="Email"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+  		android:padding="10dp"
+  		android:textColor="#000000"
+  	></EditText>
+<!--  Location Label -->
+  	<EditText
+  		android:id="@+id/editlocation"	
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+		android:hint="Location"
+  		android:padding="10dp"
+  		android:textColor="#000000"
+  	></EditText>
+  	<!-- web site -->
+  	<EditText
+  		android:id="@+id/editwebsite"	
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+		android:hint="website"
+  		android:padding="10dp"
+  		android:textColor="#000000"
+  	></EditText>
+  <!-- About ME -->
+  	<EditText
+  		android:id="@+id/editaboutme"	
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+		android:hint="About ME"
+  		android:padding="10dp"
+  		android:textColor="#000000"
+  	></EditText>
+   <!-- Age -->
+  	<EditText
+  		android:id="@+id/editage"	
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+		android:layout_weight="2"
+		android:hint="Age"
+		android:inputType="number"
+  		android:padding="10dp"
+  		android:textColor="#000000"
+  	></EditText>
+  	</TableLayout>
+  </ScrollView>
+  <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp" 
+        android:background="@android:drawable/bottom_bar"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="1.0dip">
+        
+    <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="0.0dip" 
+            android:layout_height="fill_parent"
+            android:textStyle="bold" 
+            android:text="@string/buttonRegister"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0.0dip" 
+            android:textStyle="bold" 
+            android:layout_height="fill_parent"
+           android:text="@string/buttonCancel"
+            android:layout_weight="1.0" /> 
+ </LinearLayout>
+</RelativeLayout>
